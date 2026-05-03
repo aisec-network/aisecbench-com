@@ -4,6 +4,8 @@ description: "AI Sec Bench covers cybersecurity news with an engineer's filter. 
 pubDate: 2026-05-03
 tags: ["meta"]
 category: "site"
+heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/featured/aisecbench.com/welcome.png
+heroAlt: "What this site is for"
 ---
 
 AI Sec Bench exists for a reason: there is too much cybersecurity news, and too little of it is useful to people who actually do the work.
