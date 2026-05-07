@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#16a34a" stop-opacity="0" />
+      <stop offset="1" stop-color="#16a34a" stop-opacity="0.18" />
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#f0fdf4" />
+  <rect x="80" y="540" width="120" height="6" fill="#16a34a" />
+  
+  <g transform="translate(80, 200)">
+    <text font-family="Outfit, system-ui, sans-serif" font-size="78" font-weight="700" fill="#14532d" letter-spacing="-2">
+      AI Sec Bench
+    </text>
+    <text y="120" font-family="Source Code Pro, system-ui, sans-serif" font-size="32" fill="#86efac" letter-spacing="0">
+      Benchmarking AI security tools with real data.
+    </text>
+    <text y="280" font-family="Source Code Pro, monospace" font-size="22" fill="#16a34a" letter-spacing="2" text-transform="uppercase">
+      aisecbench.com
+    </text>
+  </g>
+</svg>
