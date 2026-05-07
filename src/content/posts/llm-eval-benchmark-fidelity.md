@@ -2,7 +2,7 @@
 title: "LLM Evaluation Benchmark Fidelity: Why MMLU Scores Don't Predict Production Quality"
 description: "Models with identical MMLU scores produce wildly different production outcomes. Here's where benchmark fidelity actually breaks down and what to measure instead."
 pubDate: 2026-05-07
-author: "Priya Anand"
+author: "Daniel Park"
 tags: ["benchmarks", "eval", "llm-quality", "production-llm"]
 category: "ops"
 sources:
