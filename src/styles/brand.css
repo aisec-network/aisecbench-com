@@ -1,43 +1,43 @@
-/* Brand override generated from shared/brand-books/aisecbench-com.json
- * This makes aisecbench-com visually distinct from sister sites in the same cluster.
- * Loaded after globals.css; overrides cluster defaults with brand-book values.
+/* Brand override for aisecbench-com — cluster=engineering.
+ * Uses cluster-matching selector specificity (0,1,1) so this OVERRIDES the
+ * cluster defaults from globals.css, which use the same selector specificity.
+ * Source order wins; brand.css is imported after globals.css in BaseLayout.
  */
 
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600;700&display=swap");
 
-:root {
+body[data-cluster="engineering"] {
   --bg: 240 253 244;
   --fg: 20 83 45;
   --surface: 220 252 231;
+  --muted: 240 253 244;
   --muted-fg: 134 239 172;
-
-  --brand-accent-rgb: 22 163 74;
+  --border: 134 239 172;
 
   --font-display: "Outfit", system-ui, sans-serif;
   --font-body: "Source Code Pro", system-ui, sans-serif;
 
+  /* Override the accent ramp midpoints with brand accent.
+   * The 400-700 range is what most components use. */
+  --accent-400: 22 163 74;
+  --accent-500: 22 163 74;
+  --accent-600: 22 163 74;
+  --accent-700: 22 163 74;
+
+  /* Brand metadata */
   --brand-tone: "benchmark-green";
+  --brand-accent-rgb: 22 163 74;
 }
 
-body[data-cluster] {
-  background: rgb(var(--bg));
-  color: rgb(var(--fg));
-  font-family: var(--font-body);
-}
-
-body[data-cluster] h1, body[data-cluster] h2, body[data-cluster] h3,
-body[data-cluster] .display {
-  font-family: var(--font-display);
-}
-
-/* Override accent ramp midpoint with brand accent */
-body[data-cluster] {
-  --accent-500: var(--brand-accent-rgb);
-  --accent-600: var(--brand-accent-rgb);
-}
-
-/* Surface treatment per tone */
-body[data-cluster] .card,
-body[data-cluster] article {
-  background: rgb(var(--surface));
+/* Same in dark mode (most brand books are dark-tone already) */
+html.dark body[data-cluster="engineering"] {
+  --bg: 240 253 244;
+  --fg: 20 83 45;
+  --surface: 220 252 231;
+  --muted: 240 253 244;
+  --muted-fg: 134 239 172;
+  --accent-400: 22 163 74;
+  --accent-500: 22 163 74;
+  --accent-600: 22 163 74;
+  --accent-700: 22 163 74;
 }
