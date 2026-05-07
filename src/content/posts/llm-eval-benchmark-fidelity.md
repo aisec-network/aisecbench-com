@@ -14,7 +14,7 @@ sources:
     url: "https://github.com/google/BIG-bench"
 schema:
   type: "TechArticle"
-heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/?prompt=clean%20engineering%20benchmark%20chart%20comparison%2C%20professional%20technical%20blue&aspect=hero
+heroImage: https://aisec-imagegen.th3gptoperator.workers.dev/featured/aisecbench.com/llm-eval-benchmark-fidelity.png
 heroAlt: "Benchmark fidelity comparison chart"
 ---
 
