@@ -1,24 +1,35 @@
-/* Brand for aisecbench-com: cluster=defensive, variant=v6_minimal_typography */
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Code+Pro:wght@400;500;600;700&display=swap");
+/* Brand for aisecbench-com: identity=f19_sans_jakarta_recoleta+p12_h68_cool+directory+v08_watchdog */
 
-body[data-cluster='defensive'] {
-  --bg: 240 253 244;
-  --fg: 20 83 45;
-  --surface: 220 252 231;
-  --muted: 240 253 244;
-  --muted-fg: 134 239 172;
-  --border: 134 239 172;
-  --font-display: "Outfit", system-ui, sans-serif;
-  --font-body: "Source Code Pro", system-ui, sans-serif;
-  --accent-400: 22 163 74;
-  --accent-500: 22 163 74;
-  --accent-600: 22 163 74;
-  --accent-700: 22 163 74;
-  --brand-tone: "benchmark-green";
-  --brand-accent-rgb: 22 163 74;
-  --brand-variant: "v6_minimal_typography";
+body[data-cluster] {
+  --bg: 254 254 255;
+  --fg: 12 18 32;
+  --muted: 246 248 252;
+  --muted-fg: 70 80 108;
+  --border: 220 226 238;
+  --surface: 254 254 255;
+  --surface-alt: 246 248 252;
+  --font-display: "Plus Jakarta Sans", "Helvetica Neue", system-ui, sans-serif;
+  --font-body: "Plus Jakarta Sans", "Helvetica Neue", system-ui, sans-serif;
+  --font-mono: "Space Mono", ui-monospace, monospace;
+  --brand-accent-rgb: 175 196 39;
+  --brand-identity-font: "f19_sans_jakarta_recoleta";
+  --brand-identity-palette: "p12_h68_cool";
+  --brand-identity-layout: "directory";
+  --brand-identity-voice: "v08_watchdog";
 }
-html.dark body[data-cluster='defensive'] {
-  --bg: 240 253 244; --fg: 20 83 45; --surface: 220 252 231;
-  --accent-500: 22 163 74; --accent-600: 22 163 74;
+
+html.dark body[data-cluster] {
+  --bg: 12 16 28;
+  --fg: 240 244 252;
+  --muted: 22 28 46;
+  --muted-fg: 156 166 196;
+  --border: 50 60 84;
+  --surface: 12 16 28;
+  --surface-alt: 22 28 46;
+  --brand-accent-rgb: 211 232 74;
 }
+
+/* Density modifiers */
+body.density-loose  { --space-section: 5rem; }
+body.density-normal { --space-section: 3rem; }
+body.density-dense  { --space-section: 1.5rem; }
