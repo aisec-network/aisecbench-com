@@ -31,3 +31,8 @@ What we don't publish:
 Pseudonymous bylines. The sources are what matter, and they are linked.
 
 Real coverage starts shortly.
+
+## See also
+
+- [AI defense strategies](https://aidefense.dev/)
+- [AI content moderation tools](https://aimoderationtools.com/)

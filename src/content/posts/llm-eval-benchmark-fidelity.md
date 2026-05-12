@@ -106,3 +106,5 @@ For the engineering side of LLM ops more broadly, see [llmops.report](https://ll
 - Re-running the same benchmark monthly to detect drift — production drift detection is its own system
 
 The benchmark-vs-production gap is the most expensive un-instrumented mistake in LLM operations. Closing it is worth the effort.
+
+For more context, [AI defense strategies](https://aidefense.dev/) covers related topics in depth.
